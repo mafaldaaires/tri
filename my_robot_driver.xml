@@ -1,0 +1,8 @@
+<library path="firstrobot_webots">
+  <class name="my_robot_driver/MyRobotDriver" type="my_robot_driver::MyRobotDriver" base_class_type="webots_ros2_driver::PluginInterface">
+    <description>Driver for my_robot</description>
+  </class>
+  <class name="my_robot_driver/FollowerRobotDriver" type="my_robot_driver::FollowerRobotDriver" base_class_type="webots_ros2_driver::PluginInterface">
+    <description>Driver for follower_robot</description>
+  </class>
+</library>

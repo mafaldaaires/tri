@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="Follower robot">
+    <webots>
+        <device reference="follower_ds0" type="DistanceSensor">
+            <ros>
+                <topicName>/follower_ds0</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+        <device reference="follower_ds1" type="DistanceSensor">
+            <ros>
+                <topicName>/follower_ds1</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+        <device reference="robot_detector" type="DistanceSensor">
+            <ros>
+                <topicName>/robot_detector</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+        <plugin type="my_robot_driver/FollowerRobotDriver" />
+    </webots>
+</robot>
